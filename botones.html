@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botones</title>
+<style>
+
+body{
+    background: wheat;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+    div{
+        margin: 20px 0;
+    }
+
+    .btn{
+        background: #7e4a76;
+        color: white;
+        font-size: 16px;
+        padding: 15px 20px;
+        margin: 0 10px;
+        border-style: none;
+
+    }
+
+    .btn:hover{ 
+        opacity: 0.8; /*OPACIDAD AL MOMENTO DE PASAR EL CURSOR SOBRE EL BOTON*/
+        cursor: pointer; /*cambiar el ícono del cursor al momento de pasar sobre el boton*/
+
+    }
+
+    /*TAMAÑO*/
+
+    .small{
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .medium{
+        font-size: 16px;
+        padding: 15px 20px;
+    }
+
+    .big{
+        font-size: 20;
+        padding: 20px 25px;
+    }
+
+    /*COLORES*/
+
+    .azul{
+        background: rgb(110, 31, 31);
+    }
+    .verde{
+        background: rgb(23, 92, 23);
+    }
+    .naranja{
+        background: rgb(223, 62, 4);
+    }
+
+    /* EFECTOS */
+
+    .border-radius{
+        border-radius: 60px; /* CON ESTO DEJO LOS BORDES DEL BOTON REDONDEADOS */
+    }
+
+</style>
+
+
+</head>
+<body>
+
+    <div>
+        <button class="btn">Botón Estandar</button>
+    </div>
+    <div>
+        <button class="btn small azul">Botón pequeño</button>
+        <button class="btn medium verde ">Botón mediano</button>
+        <button class="btn big naranja">Botón Grande</button>
+
+    </div>
+
+    <div>
+        <button class="btn small azul border-radius">Botón pequeño</button>
+        <button class="btn medium verde border-radius">Botón mediano</button>
+        <button class="btn big naranja border-radius">Botón Grande</button>
+
+    </div>
+    
+</body>
+</html>

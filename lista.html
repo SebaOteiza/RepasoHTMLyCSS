@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo de Listas</title>
+
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /*Listas Desordenadas
+        list-style: none, disc circle, square
+        */
+
+        ul{
+            list-style: circle;
+        }
+
+        /*Listas Ordenadas parten con un número antes del elemento
+        list-style: none, decimal-leading-zeo, lower-roman, upper-lower-latin, upper-latin
+        */
+
+        ol{
+            list-style: decimal-leading-zero; /* con esta opción antes del elemento viene un 01, 02, 03...*/
+            /*podría usar también upper-roman comenzaría con I, II, III...*/
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li>Elemento 01</li>
+        <li>Elemento 02</li>
+        <li>Elemento 03</li>
+        <li>Elemento 04</li>
+        <li>Elemento 05</li>
+    </ul>
+
+
+    <ol>
+        <li>Elemento 01</li>
+        <li>Elemento 02</li>
+        <li>Elemento 03</li>
+        <li>Elemento 04</li>
+        <li>Elemento 05</li>
+
+
+    </ol>
+
+</body>
+
+</html>

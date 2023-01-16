@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+    <style>
+
+        /*SELECTORES*/
+
+        *{ /*selector universal, afecta a todos los elementos de nuestro sitio web*/
+            color: black;
+        }
+                /*SI BIEN ARRIBA PUSE QUE EL COLOR FUESE NEGRO, ABAJO LE DOY OTRA INSTRUCCIÓN, 
+                ESA PRIMA, LA ÚLTIMA INSTRUCCIÓN QUE SE ESCRIBE ES LA QUE SE VA A EJECUTAR*/
+
+        p{
+            color: orangered;
+        }
+
+        /*seleccionar varios elementos*/
+        h1, h2{
+            color: orange;
+        }
+
+        /*PARA SELECCIONAR UNA CLASE SE COMIENZA CON UN PUNTO .*/
+        .p1{
+            color: peru;
+            font-size: 25px;
+        }
+
+        .p2{
+            color: purple;
+            font-size: 20px;
+        }
+
+        /*PARA SELECCIONAR LOS ID SE UTILIZA #*/
+
+        #subtitulo{
+            color: brown;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Hola mundo</h1>
+
+    <!--OTRO SELECTOR APARTE DE LAS CLASES SON EL ID-->
+    <h2 id="subtitulo">Segundo encabezado</h2>
+
+
+    <!--SELECTOR CLASS PARA PODER MODIFICAR UN SOLO ELEMENTO Y NO TODO-->
+    <!--POR EL VALOR DE ESAS CLASES (EN EL EJEMPLO P1 Y P2 VAMOS A SELECCIONAR LOS ELEMENTOS PARA DAR ESTILOS ESTILOS)--> 
+    <p class="p1">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. Voluptate, accusamus deserunt. <br> Provident aut
+        debitis
+        quod facilis, <br> vel quos officia delectus reiciendis molestias? Soluta ipsum accusamus quos. Dolor tempore
+        adipisci corrupti.</p>
+
+    <p class="p2">Lorem ipsum dolor sit amet consectetur, <br> adipisicing elit. Odit, alias aut.  <br> Aliquid magni tempore eaque nihil
+        molestias delectus eligendi corporis aut voluptatibus, <br> est neque, maiores explicabo quidem. Reprehenderit, quo
+        ullam!</p>
+
+
+</body>
+
+</html>

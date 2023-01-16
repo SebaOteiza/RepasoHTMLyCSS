@@ -1,0 +1,9 @@
+h1{ /* selector */
+    color: blue;
+    font-size: 25px; /* tamaño de la letra predeterminado o en px*/
+    text-align: center; /* centrar el texto*/
+}
+
+/*el h1 es el elemento de html que queremos dar formato, dentro de las {} irá todo el código css
+en el cual irán la propiedas y su valor  la propiedad es COLOR y su valor es = AZUL en este ejemplo */
+

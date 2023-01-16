@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seudo Clase</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: sans-serif;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .menu {
+            background-color: #dae4e4;
+            padding: 10px 0px 20px 30px; /*ASÍ LE AGREGO PADDING SOLO ARRIBA Y ABAJO Y NADA A LOS COSTADOS*/
+            /*EL PRIMER VALOR ES HACIA ARRIBA, EL SEGUNDO VALOR HACIA LA DERECHA, EL TERCERO ABAJO Y EL CUARTO A LA IZQUERDA
+            SE PRESENTA COMO LAS MANESILLAS DEL RELOJ*/
+        }
+
+        .menu-nav {
+            list-style: none;
+            /*ESTILOS DE LA LISTA*/
+            padding-left: 5px ;
+            margin: 0px;
+        }
+
+        .menu-nav__item {
+            display: inline-block;
+        }
+
+        .menu-nav__item a {
+            color: #0c0101;
+            text-decoration: none;
+        }
+
+        /*SEUDO CLASES*/
+        /*LO QUE HACES ES DEFINIR EL ESTILO DE UN ESTADO, EN ESTE CASO UN ESTADO ESPECÍFICO (UN ELEMENTO)  
+            POR EJEMPLO EN UN NAV, LOS ELEMENTOS SI NO HACEN NADA SE MANTIENEN IGUAL PERO SI PASO EL CURSO SOBRE ALGÚN ELEMENTO
+            AUTOMATICAMENTE ME CAMBIA DE COLOR*/
+
+        .menu-nav__item a:hover {
+            /*AL PASAR EL PUNTERO SOBRE LOS ENLACES, CAMBIA DE COLOR EL LINK*/
+            color: rgb(136, 7, 7);
+        }
+
+        .menu-nav__item a:active {
+            /*CUANDO UN MENÚ ESTÁ ACTIVO CAMBIA DE COLOR EN EL MENÚ, LO CAMBIA DE COLOR */
+            color: rgb(206, 149, 149);
+        }
+
+        /*SEUDO ELEMENTO*/
+        /*DEFINE EL ESTILO DE UNA PARTE ESPECIFICA UN ELEMENTO, COMO AGREGAR UN CONTENIDO */
+
+        /*SE AGREGAN UTILIZANDO :: EN ESTE EJEMPLO, AFTER LE ENTREGA UN - ENTRE CADA ELEMENTO*/
+        .menu-nav__item a::after {
+            content: " - ";
+        }
+
+        /*MODELO DE CAJAS*/
+
+        main{
+            width: 100%;
+            height: 300px;
+            border: 10px solid black;
+            padding: 20px 85px;
+        }
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="menu"> <!--SOLO ESTILOS PARA NAV-->
+            <ul class="menu-nav"> <!--estilos a ul-->
+                <li class="menu-nav__item"><a href="">Inicio</a></li> <!--estilos a los li-->
+                <li class="menu-nav__item"><a href="">Trabajos</a></li>
+                <li class="menu-nav__item"><a href="">Blog</a></li>
+                <li class="menu-nav__item"><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Hola Mundo</h1>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Magnam iste perspiciatis quo, assumenda minus consectetur, 
+                    amet esse beatae reprehenderit animi voluptate architecto praesentium debitis 
+                    harum repellendus facilis aperiam, molestias id.</pp>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+
+</html>

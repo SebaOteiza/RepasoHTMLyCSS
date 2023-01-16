@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+<style>
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    .caja{
+        background: rgb(185, 65, 22);
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+       
+
+        /*EL FLOAT POSICIONA LAS CAJAS DE FORMA QUE QUERAMOS, EN ESTE CAOS HORIZONTAL */
+    }
+
+    .caja-padre{
+        margin: 20px;
+        background: plum;
+        width: 500px;
+        height: 500px;
+        position: relative;
+
+    }
+
+    .position{
+        background: rgb(29, 102, 29);
+        position: absolute; /* moveré la caja a donde yo le diga, dejando un espacio en blanco en su antigua posición y las otras cajas no tocarán ese lugar */
+       /* left: 300px;  moveré 200 px la caja de la izquierda  */
+       /* top: 100px; /* moveré 100 px la caja desde arriba pero contando desde la caja superior */
+       bottom: 0%;
+       right: 0%;
+
+        /*si ocupo la position ABSOLUTE, la caja se moverá a donde le diga PERO el espacio que deja será ocupado por las demás cajas  
+        PERO por ejemplo, si le pongo top: 300px eso quiere decir que contará esos 300px desde el borde del navegador */
+    
+        /* si ocupamos la position FIDEX la caja ocupará una posición FIJA, es decir, al realizar el scroll la 
+        caja se quedará ahí, todo lo demás se moverá. ESO SE VE EN LOS MENÚS DE NAVEGACIÓN COMO YOUTUBE, SE QUEDAN FIJOS  */
+    
+    }
+
+
+</style>
+
+
+</head>
+<body>
+
+    <div class="caja"></div>
+    <div class="caja-padre">
+        <div class="caja position">
+
+        </div></div>
+    
+    <div class="caja "></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+
+
+    
+</body>
+</html>
