@@ -71,7 +71,6 @@ body {
         background-color: #253062;
         padding: 10px;
         text-align: center;
-        padding: 15px 0;
         color: #fff;
     }
 
@@ -133,9 +132,6 @@ body {
         
     }
 
-        .box{
-            margin: 10px;
-        }
 
         @media screen and (max-width:640px) {
             .box{
